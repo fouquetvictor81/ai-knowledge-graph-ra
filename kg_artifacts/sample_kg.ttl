@@ -1,0 +1,843 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:   <https://aikg.example.org/> .
+@prefix wd:   <http://www.wikidata.org/entity/> .
+
+# ===========================================================================
+# Sample Knowledge Graph — AI Researchers Domain
+# Total: 200+ triples covering researchers, organizations, awards, publications
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# ORGANIZATIONS
+# ---------------------------------------------------------------------------
+
+ex:Meta_AI
+    a ex:Company ;
+    rdfs:label "Meta AI"@en ;
+    ex:name "Meta AI"@en ;
+    ex:alias "Facebook AI Research"@en ;
+    ex:alias "FAIR"@en ;
+    ex:locatedIn ex:USA ;
+    ex:foundingYear "2013"^^xsd:integer ;
+    owl:sameAs wd:Q95075 .
+
+ex:Google_DeepMind
+    a ex:Company ;
+    rdfs:label "Google DeepMind"@en ;
+    ex:name "Google DeepMind"@en ;
+    ex:alias "DeepMind"@en ;
+    ex:locatedIn ex:UK ;
+    ex:locatedIn ex:USA ;
+    ex:foundingYear "2010"^^xsd:integer ;
+    owl:sameAs wd:Q15733006 .
+
+ex:OpenAI
+    a ex:Company ;
+    rdfs:label "OpenAI"@en ;
+    ex:name "OpenAI"@en ;
+    ex:locatedIn ex:USA ;
+    ex:foundingYear "2015"^^xsd:integer ;
+    owl:sameAs wd:Q21708200 .
+
+ex:Mila
+    a ex:ResearchLab ;
+    rdfs:label "Mila - Quebec AI Institute"@en ;
+    ex:name "Mila"@en ;
+    ex:alias "Montreal Institute for Learning Algorithms"@en ;
+    ex:locatedIn ex:Canada ;
+    ex:foundingYear "1993"^^xsd:integer ;
+    owl:sameAs wd:Q17083398 .
+
+ex:Stanford_University
+    a ex:University , ex:TopUniversity ;
+    rdfs:label "Stanford University"@en ;
+    ex:name "Stanford University"@en ;
+    ex:locatedIn ex:USA ;
+    ex:foundingYear "1885"^^xsd:integer ;
+    owl:sameAs wd:Q41506 .
+
+ex:MIT
+    a ex:University , ex:TopUniversity ;
+    rdfs:label "Massachusetts Institute of Technology"@en ;
+    ex:name "MIT"@en ;
+    ex:alias "Massachusetts Institute of Technology"@en ;
+    ex:locatedIn ex:USA ;
+    ex:foundingYear "1861"^^xsd:integer ;
+    owl:sameAs wd:Q49108 .
+
+ex:CMU
+    a ex:University , ex:TopUniversity ;
+    rdfs:label "Carnegie Mellon University"@en ;
+    ex:name "Carnegie Mellon University"@en ;
+    ex:alias "CMU"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q190080 .
+
+ex:UC_Berkeley
+    a ex:University , ex:TopUniversity ;
+    rdfs:label "University of California, Berkeley"@en ;
+    ex:name "UC Berkeley"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q168719 .
+
+ex:University_of_Toronto
+    a ex:University ;
+    rdfs:label "University of Toronto"@en ;
+    ex:name "University of Toronto"@en ;
+    ex:locatedIn ex:Canada ;
+    owl:sameAs wd:Q180865 .
+
+ex:New_York_University
+    a ex:University ;
+    rdfs:label "New York University"@en ;
+    ex:name "New York University"@en ;
+    ex:alias "NYU"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q49115 .
+
+ex:Google_Brain
+    a ex:ResearchLab ;
+    rdfs:label "Google Brain"@en ;
+    ex:name "Google Brain"@en ;
+    ex:locatedIn ex:USA ;
+    ex:memberOf ex:Google ;
+    owl:sameAs wd:Q4849038 .
+
+ex:Google
+    a ex:Company ;
+    rdfs:label "Google"@en ;
+    ex:name "Google"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q95 .
+
+ex:Apple
+    a ex:Company ;
+    rdfs:label "Apple Inc."@en ;
+    ex:name "Apple"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q312 .
+
+ex:Microsoft_Research
+    a ex:ResearchLab ;
+    rdfs:label "Microsoft Research"@en ;
+    ex:name "Microsoft Research"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q1575037 .
+
+ex:IDSIA
+    a ex:ResearchLab ;
+    rdfs:label "IDSIA - Dalle Molle Institute"@en ;
+    ex:name "IDSIA"@en ;
+    ex:locatedIn ex:Switzerland .
+
+ex:MPI_Tuebingen
+    a ex:ResearchLab ;
+    rdfs:label "Max Planck Institute for Intelligent Systems"@en ;
+    ex:name "MPI Tübingen"@en ;
+    ex:locatedIn ex:Germany .
+
+ex:Cambridge_University
+    a ex:University ;
+    rdfs:label "University of Cambridge"@en ;
+    ex:name "University of Cambridge"@en ;
+    ex:locatedIn ex:UK ;
+    owl:sameAs wd:Q35794 .
+
+ex:McGill_University
+    a ex:University ;
+    rdfs:label "McGill University"@en ;
+    ex:name "McGill University"@en ;
+    ex:locatedIn ex:Canada ;
+    owl:sameAs wd:Q201492 .
+
+ex:UCLA
+    a ex:University ;
+    rdfs:label "University of California, Los Angeles"@en ;
+    ex:name "UCLA"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q174710 .
+
+ex:Columbia_University
+    a ex:University ;
+    rdfs:label "Columbia University"@en ;
+    ex:name "Columbia University"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q49088 .
+
+ex:Harvard_University
+    a ex:University ;
+    rdfs:label "Harvard University"@en ;
+    ex:name "Harvard University"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q13371 .
+
+ex:Caltech
+    a ex:University ;
+    rdfs:label "California Institute of Technology"@en ;
+    ex:name "Caltech"@en ;
+    ex:locatedIn ex:USA ;
+    owl:sameAs wd:Q37548 .
+
+ex:UPMC
+    a ex:University ;
+    rdfs:label "Sorbonne University (Pierre and Marie Curie)"@en ;
+    ex:name "UPMC / Sorbonne"@en ;
+    ex:locatedIn ex:France .
+
+# ---------------------------------------------------------------------------
+# COUNTRIES
+# ---------------------------------------------------------------------------
+
+ex:USA
+    a ex:Country ;
+    rdfs:label "United States of America"@en ;
+    ex:name "USA"@en ;
+    owl:sameAs wd:Q30 .
+
+ex:UK
+    a ex:Country ;
+    rdfs:label "United Kingdom"@en ;
+    ex:name "UK"@en ;
+    owl:sameAs wd:Q145 .
+
+ex:Canada
+    a ex:Country ;
+    rdfs:label "Canada"@en ;
+    ex:name "Canada"@en ;
+    owl:sameAs wd:Q16 .
+
+ex:France
+    a ex:Country ;
+    rdfs:label "France"@en ;
+    ex:name "France"@en ;
+    owl:sameAs wd:Q142 .
+
+ex:Germany
+    a ex:Country ;
+    rdfs:label "Germany"@en ;
+    ex:name "Germany"@en ;
+    owl:sameAs wd:Q183 .
+
+ex:Switzerland
+    a ex:Country ;
+    rdfs:label "Switzerland"@en ;
+    ex:name "Switzerland"@en ;
+    owl:sameAs wd:Q39 .
+
+ex:Israel
+    a ex:Country ;
+    rdfs:label "Israel"@en ;
+    ex:name "Israel"@en ;
+    owl:sameAs wd:Q801 .
+
+ex:Russia
+    a ex:Country ;
+    rdfs:label "Russia"@en ;
+    ex:name "Russia"@en ;
+    owl:sameAs wd:Q159 .
+
+ex:Spain
+    a ex:Country ;
+    rdfs:label "Spain"@en ;
+    ex:name "Spain"@en ;
+    owl:sameAs wd:Q29 .
+
+ex:China
+    a ex:Country ;
+    rdfs:label "China"@en ;
+    ex:name "China"@en ;
+    owl:sameAs wd:Q148 .
+
+# ---------------------------------------------------------------------------
+# AWARDS
+# ---------------------------------------------------------------------------
+
+ex:Turing_Award
+    a ex:Award ;
+    rdfs:label "ACM Turing Award"@en ;
+    ex:name "Turing Award"@en ;
+    rdfs:comment "The highest distinction in Computer Science, considered the 'Nobel Prize of Computing'."@en ;
+    owl:sameAs wd:Q185667 .
+
+ex:NeurIPS_Best_Paper
+    a ex:Award ;
+    rdfs:label "NeurIPS Best Paper Award"@en ;
+    ex:name "NeurIPS Best Paper"@en .
+
+ex:ICML_Best_Paper
+    a ex:Award ;
+    rdfs:label "ICML Best Paper Award"@en ;
+    ex:name "ICML Best Paper"@en .
+
+ex:ICLR_Outstanding_Paper
+    a ex:Award ;
+    rdfs:label "ICLR Outstanding Paper Award"@en ;
+    ex:name "ICLR Outstanding Paper"@en .
+
+ex:ACM_Fellows
+    a ex:Award ;
+    rdfs:label "ACM Fellows"@en ;
+    ex:name "ACM Fellows Award"@en .
+
+ex:IEEE_Fellows
+    a ex:Award ;
+    rdfs:label "IEEE Fellows"@en ;
+    ex:name "IEEE Fellows Award"@en .
+
+ex:Royal_Society_Fellowship
+    a ex:Award ;
+    rdfs:label "Royal Society Fellowship"@en ;
+    ex:name "Royal Society Fellowship"@en .
+
+ex:MIT_TR35
+    a ex:Award ;
+    rdfs:label "MIT Technology Review 35 Innovators Under 35"@en ;
+    ex:name "MIT TR35 Award"@en .
+
+# ---------------------------------------------------------------------------
+# CONFERENCES
+# ---------------------------------------------------------------------------
+
+ex:NeurIPS
+    a ex:Conference ;
+    rdfs:label "Conference on Neural Information Processing Systems"@en ;
+    ex:name "NeurIPS"@en ;
+    ex:alias "NIPS"@en .
+
+ex:ICML
+    a ex:Conference ;
+    rdfs:label "International Conference on Machine Learning"@en ;
+    ex:name "ICML"@en .
+
+ex:ICLR
+    a ex:Conference ;
+    rdfs:label "International Conference on Learning Representations"@en ;
+    ex:name "ICLR"@en .
+
+ex:CVPR
+    a ex:Conference ;
+    rdfs:label "Conference on Computer Vision and Pattern Recognition"@en ;
+    ex:name "CVPR"@en .
+
+ex:ACL
+    a ex:Conference ;
+    rdfs:label "Annual Meeting of the Association for Computational Linguistics"@en ;
+    ex:name "ACL"@en .
+
+ex:AAAI
+    a ex:Conference ;
+    rdfs:label "AAAI Conference on Artificial Intelligence"@en ;
+    ex:name "AAAI"@en .
+
+# ---------------------------------------------------------------------------
+# PUBLICATIONS
+# ---------------------------------------------------------------------------
+
+ex:AlexNet_Paper
+    a ex:Publication ;
+    rdfs:label "ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)"@en ;
+    ex:name "AlexNet"@en ;
+    ex:publicationYear "2012"^^xsd:integer ;
+    ex:publishedAt ex:NeurIPS .
+
+ex:GAN_Paper
+    a ex:Publication ;
+    rdfs:label "Generative Adversarial Networks"@en ;
+    ex:name "GAN Paper"@en ;
+    ex:publicationYear "2014"^^xsd:integer ;
+    ex:publishedAt ex:NeurIPS ;
+    owl:sameAs wd:Q21246376 .
+
+ex:Attention_Is_All_You_Need
+    a ex:Publication ;
+    rdfs:label "Attention Is All You Need"@en ;
+    ex:name "Attention Is All You Need"@en ;
+    ex:publicationYear "2017"^^xsd:integer ;
+    ex:publishedAt ex:NeurIPS ;
+    owl:sameAs wd:Q59670178 .
+
+ex:AlphaGo_Paper
+    a ex:Publication ;
+    rdfs:label "Mastering the game of Go with deep neural networks and tree search"@en ;
+    ex:name "AlphaGo Paper"@en ;
+    ex:publicationYear "2016"^^xsd:integer ;
+    owl:sameAs wd:Q20983027 .
+
+ex:AlphaZero_Paper
+    a ex:Publication ;
+    rdfs:label "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm (AlphaZero)"@en ;
+    ex:name "AlphaZero Paper"@en ;
+    ex:publicationYear "2017"^^xsd:integer .
+
+ex:BERT_Paper
+    a ex:Publication ;
+    rdfs:label "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"@en ;
+    ex:name "BERT"@en ;
+    ex:publicationYear "2018"^^xsd:integer ;
+    ex:publishedAt ex:ACL ;
+    owl:sameAs wd:Q59667175 .
+
+ex:GPT3_Paper
+    a ex:Publication ;
+    rdfs:label "Language Models are Few-Shot Learners (GPT-3)"@en ;
+    ex:name "GPT-3 Paper"@en ;
+    ex:publicationYear "2020"^^xsd:integer ;
+    ex:publishedAt ex:NeurIPS .
+
+ex:LeNet_Paper
+    a ex:Publication ;
+    rdfs:label "Gradient-Based Learning Applied to Document Recognition (LeNet)"@en ;
+    ex:name "LeNet Paper"@en ;
+    ex:publicationYear "1998"^^xsd:integer .
+
+ex:Deep_Learning_Book
+    a ex:Publication ;
+    rdfs:label "Deep Learning (textbook)"@en ;
+    ex:name "Deep Learning Book"@en ;
+    ex:publicationYear "2016"^^xsd:integer .
+
+ex:Word2Vec_Paper
+    a ex:Publication ;
+    rdfs:label "Distributed Representations of Words and Phrases (Word2Vec)"@en ;
+    ex:name "Word2Vec Paper"@en ;
+    ex:publicationYear "2013"^^xsd:integer .
+
+ex:Dropout_Paper
+    a ex:Publication ;
+    rdfs:label "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"@en ;
+    ex:name "Dropout Paper"@en ;
+    ex:publicationYear "2014"^^xsd:integer .
+
+ex:Backprop_Paper
+    a ex:Publication ;
+    rdfs:label "Learning representations by back-propagating errors"@en ;
+    ex:name "Backpropagation Paper"@en ;
+    ex:publicationYear "1986"^^xsd:integer .
+
+ex:Adam_Optimizer_Paper
+    a ex:Publication ;
+    rdfs:label "Adam: A Method for Stochastic Optimization"@en ;
+    ex:name "Adam Optimizer Paper"@en ;
+    ex:publicationYear "2014"^^xsd:integer ;
+    ex:publishedAt ex:ICLR .
+
+ex:MAML_Paper
+    a ex:Publication ;
+    rdfs:label "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)"@en ;
+    ex:name "MAML Paper"@en ;
+    ex:publicationYear "2017"^^xsd:integer ;
+    ex:publishedAt ex:ICML .
+
+ex:ResNet_Paper
+    a ex:Publication ;
+    rdfs:label "Deep Residual Learning for Image Recognition (ResNet)"@en ;
+    ex:name "ResNet Paper"@en ;
+    ex:publicationYear "2015"^^xsd:integer ;
+    ex:publishedAt ex:CVPR .
+
+# ---------------------------------------------------------------------------
+# RESEARCHERS — Complete profiles with multiple properties
+# ---------------------------------------------------------------------------
+
+ex:Yann_LeCun
+    a ex:Researcher ;
+    rdfs:label "Yann LeCun"@en ;
+    ex:name "Yann LeCun"@en ;
+    ex:birthDate "1960-07-08"^^xsd:date ;
+    ex:bornIn ex:France ;
+    ex:nationality "French"@en ;
+    ex:worksAt ex:Meta_AI ;
+    ex:worksAt ex:New_York_University ;
+    ex:studiedAt ex:UPMC ;
+    ex:wonAward ex:Turing_Award ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:wonAward ex:ACM_Fellows ;
+    ex:authorOf ex:LeNet_Paper ;
+    ex:authorOf ex:Deep_Learning_Book ;
+    ex:collaboratesWith ex:Geoffrey_Hinton ;
+    ex:collaboratesWith ex:Yoshua_Bengio ;
+    ex:hIndex "100"^^xsd:integer ;
+    ex:citationCount "300000"^^xsd:integer ;
+    owl:sameAs wd:Q1330151 .
+
+ex:Geoffrey_Hinton
+    a ex:Researcher ;
+    rdfs:label "Geoffrey Hinton"@en ;
+    ex:name "Geoffrey Hinton"@en ;
+    ex:birthDate "1947-12-06"^^xsd:date ;
+    ex:bornIn ex:UK ;
+    ex:nationality "British"@en ;
+    ex:worksAt ex:Google_DeepMind ;
+    ex:worksAt ex:University_of_Toronto ;
+    ex:studiedAt ex:Cambridge_University ;
+    ex:wonAward ex:Turing_Award ;
+    ex:wonAward ex:Royal_Society_Fellowship ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:authorOf ex:AlexNet_Paper ;
+    ex:authorOf ex:Backprop_Paper ;
+    ex:authorOf ex:Dropout_Paper ;
+    ex:collaboratesWith ex:Yann_LeCun ;
+    ex:collaboratesWith ex:Yoshua_Bengio ;
+    ex:collaboratesWith ex:Ilya_Sutskever ;
+    ex:supervised ex:Ilya_Sutskever ;
+    ex:supervised ex:Alex_Krizhevsky ;
+    ex:hIndex "150"^^xsd:integer ;
+    ex:citationCount "450000"^^xsd:integer ;
+    owl:sameAs wd:Q92743 .
+
+ex:Yoshua_Bengio
+    a ex:Researcher ;
+    rdfs:label "Yoshua Bengio"@en ;
+    ex:name "Yoshua Bengio"@en ;
+    ex:birthDate "1964-03-05"^^xsd:date ;
+    ex:bornIn ex:France ;
+    ex:nationality "Canadian"@en ;
+    ex:worksAt ex:Mila ;
+    ex:worksAt ex:McGill_University ;
+    ex:studiedAt ex:McGill_University ;
+    ex:wonAward ex:Turing_Award ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:authorOf ex:Deep_Learning_Book ;
+    ex:collaboratesWith ex:Yann_LeCun ;
+    ex:collaboratesWith ex:Geoffrey_Hinton ;
+    ex:supervised ex:Kyunghyun_Cho ;
+    ex:supervised ex:Hugo_Larochelle ;
+    ex:supervised ex:Ian_Goodfellow ;
+    ex:hIndex "120"^^xsd:integer ;
+    ex:citationCount "380000"^^xsd:integer ;
+    owl:sameAs wd:Q55683 .
+
+ex:Andrew_Ng
+    a ex:Researcher ;
+    rdfs:label "Andrew Ng"@en ;
+    ex:name "Andrew Ng"@en ;
+    ex:birthDate "1976-04-18"^^xsd:date ;
+    ex:bornIn ex:UK ;
+    ex:nationality "American"@en ;
+    ex:worksAt ex:Stanford_University ;
+    ex:studiedAt ex:UC_Berkeley ;
+    ex:studiedAt ex:MIT ;
+    ex:wonAward ex:MIT_TR35 ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:authorOf ex:Deep_Learning_Book ;
+    ex:collaboratesWith ex:Fei-Fei_Li ;
+    ex:hIndex "85"^^xsd:integer ;
+    ex:citationCount "180000"^^xsd:integer ;
+    owl:sameAs wd:Q2678895 .
+
+ex:Fei-Fei_Li
+    a ex:Researcher ;
+    rdfs:label "Fei-Fei Li"@en ;
+    ex:name "Fei-Fei Li"@en ;
+    ex:bornIn ex:China ;
+    ex:nationality "American"@en ;
+    ex:worksAt ex:Stanford_University ;
+    ex:studiedAt ex:Caltech ;
+    ex:wonAward ex:ACM_Fellows ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:collaboratesWith ex:Andrew_Ng ;
+    ex:hIndex "80"^^xsd:integer ;
+    ex:citationCount "200000"^^xsd:integer ;
+    owl:sameAs wd:Q57389 .
+
+ex:Jürgen_Schmidhuber
+    a ex:Researcher ;
+    rdfs:label "Jürgen Schmidhuber"@en ;
+    ex:name "Jürgen Schmidhuber"@en ;
+    ex:birthDate "1963-01-17"^^xsd:date ;
+    ex:bornIn ex:Germany ;
+    ex:nationality "German"@en ;
+    ex:worksAt ex:IDSIA ;
+    ex:hIndex "75"^^xsd:integer ;
+    ex:citationCount "120000"^^xsd:integer ;
+    owl:sameAs wd:Q92744 .
+
+ex:Ian_Goodfellow
+    a ex:Researcher ;
+    rdfs:label "Ian Goodfellow"@en ;
+    ex:name "Ian Goodfellow"@en ;
+    ex:worksAt ex:Apple ;
+    ex:studiedAt ex:Stanford_University ;
+    ex:supervisedBy ex:Yoshua_Bengio ;
+    ex:wonAward ex:MIT_TR35 ;
+    ex:authorOf ex:GAN_Paper ;
+    ex:authorOf ex:Deep_Learning_Book ;
+    ex:collaboratesWith ex:Yoshua_Bengio ;
+    ex:hIndex "40"^^xsd:integer ;
+    owl:sameAs wd:Q28140906 .
+
+ex:Ilya_Sutskever
+    a ex:Researcher ;
+    rdfs:label "Ilya Sutskever"@en ;
+    ex:name "Ilya Sutskever"@en ;
+    ex:bornIn ex:Russia ;
+    ex:worksAt ex:OpenAI ;
+    ex:studiedAt ex:University_of_Toronto ;
+    ex:supervisedBy ex:Geoffrey_Hinton ;
+    ex:authorOf ex:AlexNet_Paper ;
+    ex:authorOf ex:Word2Vec_Paper ;
+    ex:collaboratesWith ex:Geoffrey_Hinton ;
+    ex:collaboratesWith ex:Greg_Brockman ;
+    ex:hIndex "45"^^xsd:integer ;
+    owl:sameAs wd:Q28485575 .
+
+ex:Demis_Hassabis
+    a ex:Researcher ;
+    rdfs:label "Demis Hassabis"@en ;
+    ex:name "Demis Hassabis"@en ;
+    ex:birthDate "1976-07-27"^^xsd:date ;
+    ex:bornIn ex:UK ;
+    ex:nationality "British"@en ;
+    ex:worksAt ex:Google_DeepMind ;
+    ex:studiedAt ex:Cambridge_University ;
+    ex:wonAward ex:Royal_Society_Fellowship ;
+    ex:collaboratesWith ex:David_Silver ;
+    ex:collaboratesWith ex:Oriol_Vinyals ;
+    ex:hIndex "35"^^xsd:integer ;
+    owl:sameAs wd:Q562141 .
+
+ex:Oriol_Vinyals
+    a ex:Researcher ;
+    rdfs:label "Oriol Vinyals"@en ;
+    ex:name "Oriol Vinyals"@en ;
+    ex:bornIn ex:Spain ;
+    ex:worksAt ex:Google_DeepMind ;
+    ex:collaboratesWith ex:Demis_Hassabis ;
+    ex:collaboratesWith ex:David_Silver ;
+    owl:sameAs wd:Q55432168 .
+
+ex:Sam_Altman
+    a ex:Researcher ;
+    rdfs:label "Sam Altman"@en ;
+    ex:name "Sam Altman"@en ;
+    ex:bornIn ex:USA ;
+    ex:worksAt ex:OpenAI ;
+    ex:studiedAt ex:Stanford_University ;
+    ex:collaboratesWith ex:Greg_Brockman ;
+    ex:collaboratesWith ex:Ilya_Sutskever ;
+    owl:sameAs wd:Q27543895 .
+
+ex:Greg_Brockman
+    a ex:Researcher ;
+    rdfs:label "Greg Brockman"@en ;
+    ex:name "Greg Brockman"@en ;
+    ex:bornIn ex:USA ;
+    ex:worksAt ex:OpenAI ;
+    ex:collaboratesWith ex:Sam_Altman ;
+    ex:collaboratesWith ex:Ilya_Sutskever ;
+    owl:sameAs wd:Q28485580 .
+
+ex:Pieter_Abbeel
+    a ex:Researcher ;
+    rdfs:label "Pieter Abbeel"@en ;
+    ex:name "Pieter Abbeel"@en ;
+    ex:worksAt ex:UC_Berkeley ;
+    ex:supervised ex:Chelsea_Finn ;
+    ex:supervised ex:Sergey_Levine ;
+    ex:wonAward ex:IEEE_Fellows ;
+    owl:sameAs wd:Q48402538 .
+
+ex:Sergey_Levine
+    a ex:Researcher ;
+    rdfs:label "Sergey Levine"@en ;
+    ex:name "Sergey Levine"@en ;
+    ex:worksAt ex:UC_Berkeley ;
+    ex:supervisedBy ex:Pieter_Abbeel ;
+    ex:supervised ex:Chelsea_Finn ;
+    ex:collaboratesWith ex:Chelsea_Finn ;
+    ex:collaboratesWith ex:Pieter_Abbeel ;
+    owl:sameAs wd:Q51601869 .
+
+ex:Chelsea_Finn
+    a ex:Researcher ;
+    rdfs:label "Chelsea Finn"@en ;
+    ex:name "Chelsea Finn"@en ;
+    ex:worksAt ex:Stanford_University ;
+    ex:supervisedBy ex:Sergey_Levine ;
+    ex:supervisedBy ex:Pieter_Abbeel ;
+    ex:authorOf ex:MAML_Paper ;
+    ex:collaboratesWith ex:Sergey_Levine ;
+    ex:wonAward ex:MIT_TR35 ;
+    owl:sameAs wd:Q61051882 .
+
+ex:Judea_Pearl
+    a ex:Researcher ;
+    rdfs:label "Judea Pearl"@en ;
+    ex:name "Judea Pearl"@en ;
+    ex:birthDate "1936-09-04"^^xsd:date ;
+    ex:bornIn ex:Israel ;
+    ex:nationality "American"@en ;
+    ex:worksAt ex:UCLA ;
+    ex:wonAward ex:Turing_Award ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:hIndex "80"^^xsd:integer ;
+    owl:sameAs wd:Q92722 .
+
+ex:Stuart_Russell
+    a ex:Researcher ;
+    rdfs:label "Stuart Russell"@en ;
+    ex:name "Stuart Russell"@en ;
+    ex:worksAt ex:UC_Berkeley ;
+    ex:wonAward ex:ACM_Fellows ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:hIndex "65"^^xsd:integer ;
+    owl:sameAs wd:Q92748 .
+
+ex:Peter_Norvig
+    a ex:Researcher ;
+    rdfs:label "Peter Norvig"@en ;
+    ex:name "Peter Norvig"@en ;
+    ex:worksAt ex:Google ;
+    ex:wonAward ex:ACM_Fellows ;
+    ex:wonAward ex:IEEE_Fellows ;
+    owl:sameAs wd:Q1969226 .
+
+ex:Michael_I_Jordan
+    a ex:Researcher ;
+    rdfs:label "Michael I. Jordan"@en ;
+    ex:name "Michael I. Jordan"@en ;
+    ex:worksAt ex:UC_Berkeley ;
+    ex:wonAward ex:ACM_Fellows ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:wonAward ex:NeurIPS_Best_Paper ;
+    ex:supervised ex:Andrew_Ng ;
+    ex:hIndex "90"^^xsd:integer ;
+    owl:sameAs wd:Q92745 .
+
+ex:Bernhard_Scholkopf
+    a ex:Researcher ;
+    rdfs:label "Bernhard Schölkopf"@en ;
+    ex:name "Bernhard Schölkopf"@en ;
+    ex:bornIn ex:Germany ;
+    ex:worksAt ex:MPI_Tuebingen ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:wonAward ex:Royal_Society_Fellowship ;
+    ex:hIndex "85"^^xsd:integer ;
+    owl:sameAs wd:Q92739 .
+
+ex:Zoubin_Ghahramani
+    a ex:Researcher ;
+    rdfs:label "Zoubin Ghahramani"@en ;
+    ex:name "Zoubin Ghahramani"@en ;
+    ex:worksAt ex:Cambridge_University ;
+    ex:worksAt ex:Google_Brain ;
+    ex:wonAward ex:Royal_Society_Fellowship ;
+    ex:wonAward ex:ACM_Fellows ;
+    ex:hIndex "70"^^xsd:integer ;
+    owl:sameAs wd:Q92734 .
+
+ex:David_Silver
+    a ex:Researcher ;
+    rdfs:label "David Silver"@en ;
+    ex:name "David Silver"@en ;
+    ex:worksAt ex:Google_DeepMind ;
+    ex:supervisedBy ex:Richard_Sutton ;
+    ex:authorOf ex:AlphaGo_Paper ;
+    ex:authorOf ex:AlphaZero_Paper ;
+    ex:wonAward ex:Royal_Society_Fellowship ;
+    ex:wonAward ex:NeurIPS_Best_Paper ;
+    ex:collaboratesWith ex:Demis_Hassabis ;
+    ex:collaboratesWith ex:Oriol_Vinyals ;
+    owl:sameAs wd:Q29049366 .
+
+ex:Alex_Krizhevsky
+    a ex:Researcher ;
+    rdfs:label "Alex Krizhevsky"@en ;
+    ex:name "Alex Krizhevsky"@en ;
+    ex:worksAt ex:Google ;
+    ex:studiedAt ex:University_of_Toronto ;
+    ex:supervisedBy ex:Geoffrey_Hinton ;
+    ex:authorOf ex:AlexNet_Paper ;
+    owl:sameAs wd:Q28485551 .
+
+ex:Hugo_Larochelle
+    a ex:Researcher ;
+    rdfs:label "Hugo Larochelle"@en ;
+    ex:name "Hugo Larochelle"@en ;
+    ex:worksAt ex:Google_Brain ;
+    ex:supervisedBy ex:Yoshua_Bengio ;
+    ex:collaboratesWith ex:Yoshua_Bengio ;
+    owl:sameAs wd:Q55683011 .
+
+ex:Kyunghyun_Cho
+    a ex:Researcher ;
+    rdfs:label "Kyunghyun Cho"@en ;
+    ex:name "Kyunghyun Cho"@en ;
+    ex:worksAt ex:New_York_University ;
+    ex:supervisedBy ex:Yoshua_Bengio ;
+    ex:authorOf ex:Attention_Is_All_You_Need ;
+    ex:collaboratesWith ex:Yoshua_Bengio ;
+    owl:sameAs wd:Q29575183 .
+
+ex:Nando_de_Freitas
+    a ex:Researcher ;
+    rdfs:label "Nando de Freitas"@en ;
+    ex:name "Nando de Freitas"@en ;
+    ex:worksAt ex:Google_DeepMind ;
+    ex:collaboratesWith ex:Zoubin_Ghahramani ;
+    owl:sameAs wd:Q7404 .
+
+ex:Richard_Sutton
+    a ex:Researcher ;
+    rdfs:label "Richard Sutton"@en ;
+    ex:name "Richard Sutton"@en ;
+    ex:worksAt ex:University_of_Alberta ;
+    ex:wonAward ex:ACM_Fellows ;
+    ex:wonAward ex:IEEE_Fellows ;
+    ex:hIndex "55"^^xsd:integer .
+
+ex:University_of_Alberta
+    a ex:University ;
+    rdfs:label "University of Alberta"@en ;
+    ex:name "University of Alberta"@en ;
+    ex:locatedIn ex:Canada .
+
+ex:Alec_Radford
+    a ex:Researcher ;
+    rdfs:label "Alec Radford"@en ;
+    ex:name "Alec Radford"@en ;
+    ex:worksAt ex:OpenAI ;
+    ex:authorOf ex:GPT3_Paper ;
+    ex:collaboratesWith ex:Ilya_Sutskever .
+
+ex:Diederik_Kingma
+    a ex:Researcher ;
+    rdfs:label "Diederik P. Kingma"@en ;
+    ex:name "Diederik Kingma"@en ;
+    ex:worksAt ex:Google_Brain ;
+    ex:authorOf ex:Adam_Optimizer_Paper ;
+    ex:wonAward ex:NeurIPS_Best_Paper .
+
+ex:Kaiming_He
+    a ex:Researcher ;
+    rdfs:label "Kaiming He"@en ;
+    ex:name "Kaiming He"@en ;
+    ex:bornIn ex:China ;
+    ex:worksAt ex:Meta_AI ;
+    ex:authorOf ex:ResNet_Paper ;
+    ex:wonAward ex:CVPR_Best_Paper .
+
+ex:CVPR_Best_Paper
+    a ex:Award ;
+    rdfs:label "CVPR Best Paper Award"@en ;
+    ex:name "CVPR Best Paper"@en .
+
+# Additional collaborations
+ex:Andrew_Ng ex:collaboratesWith ex:Geoffrey_Hinton .
+ex:Judea_Pearl ex:collaboratesWith ex:Stuart_Russell .
+ex:Stuart_Russell ex:collaboratesWith ex:Peter_Norvig .
+ex:Zoubin_Ghahramani ex:collaboratesWith ex:Nando_de_Freitas .
+ex:David_Silver ex:collaboratesWith ex:Oriol_Vinyals .
+ex:Kyunghyun_Cho ex:collaboratesWith ex:Ian_Goodfellow .
+ex:Alec_Radford ex:collaboratesWith ex:Sam_Altman .
+ex:Diederik_Kingma ex:collaboratesWith ex:Ian_Goodfellow .
+ex:Kaiming_He ex:collaboratesWith ex:Yann_LeCun .
+
+# Additional authorOf for multi-author papers
+ex:Yoshua_Bengio ex:authorOf ex:Attention_Is_All_You_Need .
+ex:Ian_Goodfellow ex:authorOf ex:Deep_Learning_Book .
+ex:Alec_Radford ex:authorOf ex:Attention_Is_All_You_Need .
+ex:Ilya_Sutskever ex:authorOf ex:GPT3_Paper .

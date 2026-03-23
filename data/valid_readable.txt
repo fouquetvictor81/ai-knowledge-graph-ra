@@ -1,0 +1,14 @@
+Michael_I_Jordan	wonAward	Q21591167
+alignment_Chelsea_Finn_Q61051882	predicate	sameAs
+MIT	memberOf	Q743812
+Ilya_Sutskever	worksAt	OpenAI
+CMU	memberOf	Q5059850
+Yoshua_Bengio	worksAt	Q806116
+Andrew_Ng	locatedIn	Q145
+CMU	memberOf	Q19861084
+Jurgen_Schmidhuber	studiedAt	Q486156
+alignment_CMU_Q190080	predicate	sameAs
+CMU	memberOf	Q5137944
+alignment_Judea_Pearl_Q92722	predicate	sameAs
+alignment_Generative_adversarial_network_Q21246376	predicate	sameAs
+Michael_I_Jordan	wonAward	Q13377520

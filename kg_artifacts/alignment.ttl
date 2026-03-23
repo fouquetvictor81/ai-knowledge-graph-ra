@@ -1,0 +1,429 @@
+@prefix ex: <https://aikg.example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:alignment_AlexNet_Q15733308 a rdf:Statement ;
+    rdf:object wd:Q15733308 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:AlexNet ;
+    rdfs:comment "Alignment between AlexNet and Wikidata entity Q15733308 with confidence 0.95" ;
+    ex:confidence 0.95 .
+
+ex:alignment_Alex_Krizhevsky_Q28485551 a rdf:Statement ;
+    rdf:object wd:Q28485551 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Alex_Krizhevsky ;
+    rdfs:comment "Alignment between Alex_Krizhevsky and Wikidata entity Q28485551 with confidence 0.95" ;
+    ex:confidence 0.95 .
+
+ex:alignment_AlphaGo_Q20983027 a rdf:Statement ;
+    rdf:object wd:Q20983027 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:AlphaGo ;
+    rdfs:comment "Alignment between AlphaGo and Wikidata entity Q20983027 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Andrew_Ng_Q2678895 a rdf:Statement ;
+    rdf:object wd:Q2678895 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Andrew_Ng ;
+    rdfs:comment "Alignment between Andrew_Ng and Wikidata entity Q2678895 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Apple_Q312 a rdf:Statement ;
+    rdf:object wd:Q312 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Apple ;
+    rdfs:comment "Alignment between Apple and Wikidata entity Q312 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Attention_is_All_You_Need_Q59670178 a rdf:Statement ;
+    rdf:object wd:Q59670178 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Attention_is_All_You_Need ;
+    rdfs:comment "Alignment between Attention_is_All_You_Need and Wikidata entity Q59670178 with confidence 0.9" ;
+    ex:confidence 0.9 .
+
+ex:alignment_BERT_Q59667175 a rdf:Statement ;
+    rdf:object wd:Q59667175 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:BERT ;
+    rdfs:comment "Alignment between BERT and Wikidata entity Q59667175 with confidence 0.9" ;
+    ex:confidence 0.9 .
+
+ex:alignment_Bernhard_Scholkopf_Q92739 a rdf:Statement ;
+    rdf:object wd:Q92739 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Bernhard_Scholkopf ;
+    rdfs:comment "Alignment between Bernhard_Scholkopf and Wikidata entity Q92739 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_CMU_Q190080 a rdf:Statement ;
+    rdf:object wd:Q190080 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:CMU ;
+    rdfs:comment "Alignment between CMU and Wikidata entity Q190080 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Chelsea_Finn_Q61051882 a rdf:Statement ;
+    rdf:object wd:Q61051882 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Chelsea_Finn ;
+    rdfs:comment "Alignment between Chelsea_Finn and Wikidata entity Q61051882 with confidence 0.9" ;
+    ex:confidence 0.9 .
+
+ex:alignment_David_Silver_Q29049366 a rdf:Statement ;
+    rdf:object wd:Q29049366 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:David_Silver ;
+    rdfs:comment "Alignment between David_Silver and Wikidata entity Q29049366 with confidence 0.95" ;
+    ex:confidence 0.95 .
+
+ex:alignment_DeepMind_Q15733006 a rdf:Statement ;
+    rdf:object wd:Q15733006 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:DeepMind ;
+    rdfs:comment "Alignment between DeepMind and Wikidata entity Q15733006 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Demis_Hassabis_Q562141 a rdf:Statement ;
+    rdf:object wd:Q562141 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Demis_Hassabis ;
+    rdfs:comment "Alignment between Demis_Hassabis and Wikidata entity Q562141 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Fei-Fei_Li_Q57389 a rdf:Statement ;
+    rdf:object wd:Q57389 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Fei-Fei_Li ;
+    rdfs:comment "Alignment between Fei-Fei_Li and Wikidata entity Q57389 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Generative_adversarial_network_Q21246376 a rdf:Statement ;
+    rdf:object wd:Q21246376 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Generative_adversarial_network ;
+    rdfs:comment "Alignment between Generative_adversarial_network and Wikidata entity Q21246376 with confidence 0.9" ;
+    ex:confidence 0.9 .
+
+ex:alignment_Geoffrey_Hinton_Q92743 a rdf:Statement ;
+    rdf:object wd:Q92743 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Geoffrey_Hinton ;
+    rdfs:comment "Alignment between Geoffrey_Hinton and Wikidata entity Q92743 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Google_Q95 a rdf:Statement ;
+    rdf:object wd:Q95 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Google ;
+    rdfs:comment "Alignment between Google and Wikidata entity Q95 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Greg_Brockman_Q28485580 a rdf:Statement ;
+    rdf:object wd:Q28485580 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Greg_Brockman ;
+    rdfs:comment "Alignment between Greg_Brockman and Wikidata entity Q28485580 with confidence 0.95" ;
+    ex:confidence 0.95 .
+
+ex:alignment_Hugo_Larochelle_Q55683011 a rdf:Statement ;
+    rdf:object wd:Q55683011 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Hugo_Larochelle ;
+    rdfs:comment "Alignment between Hugo_Larochelle and Wikidata entity Q55683011 with confidence 0.9" ;
+    ex:confidence 0.9 .
+
+ex:alignment_Ian_Goodfellow_Q28140906 a rdf:Statement ;
+    rdf:object wd:Q28140906 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Ian_Goodfellow ;
+    rdfs:comment "Alignment between Ian_Goodfellow and Wikidata entity Q28140906 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Ilya_Sutskever_Q28485575 a rdf:Statement ;
+    rdf:object wd:Q28485575 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Ilya_Sutskever ;
+    rdfs:comment "Alignment between Ilya_Sutskever and Wikidata entity Q28485575 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Judea_Pearl_Q92722 a rdf:Statement ;
+    rdf:object wd:Q92722 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Judea_Pearl ;
+    rdfs:comment "Alignment between Judea_Pearl and Wikidata entity Q92722 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Jurgen_Schmidhuber_Q92744 a rdf:Statement ;
+    rdf:object wd:Q92744 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Jurgen_Schmidhuber ;
+    rdfs:comment "Alignment between Jurgen_Schmidhuber and Wikidata entity Q92744 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Kyunghyun_Cho_Q29575183 a rdf:Statement ;
+    rdf:object wd:Q29575183 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Kyunghyun_Cho ;
+    rdfs:comment "Alignment between Kyunghyun_Cho and Wikidata entity Q29575183 with confidence 0.9" ;
+    ex:confidence 0.9 .
+
+ex:alignment_MIT_Q49108 a rdf:Statement ;
+    rdf:object wd:Q49108 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:MIT ;
+    rdfs:comment "Alignment between MIT and Wikidata entity Q49108 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_MetaAI_Q95075 a rdf:Statement ;
+    rdf:object wd:Q95075 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:MetaAI ;
+    rdfs:comment "Alignment between MetaAI and Wikidata entity Q95075 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Michael_I_Jordan_Q92745 a rdf:Statement ;
+    rdf:object wd:Q92745 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Michael_I_Jordan ;
+    rdfs:comment "Alignment between Michael_I_Jordan and Wikidata entity Q92745 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Mila_Q17083398 a rdf:Statement ;
+    rdf:object wd:Q17083398 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Mila ;
+    rdfs:comment "Alignment between Mila and Wikidata entity Q17083398 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Nando_de_Freitas_Q7404 a rdf:Statement ;
+    rdf:object wd:Q7404 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Nando_de_Freitas ;
+    rdfs:comment "Alignment between Nando_de_Freitas and Wikidata entity Q7404 with confidence 0.9" ;
+    ex:confidence 0.9 .
+
+ex:alignment_OpenAI_Q21708200 a rdf:Statement ;
+    rdf:object wd:Q21708200 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:OpenAI ;
+    rdfs:comment "Alignment between OpenAI and Wikidata entity Q21708200 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Oriol_Vinyals_Q55432168 a rdf:Statement ;
+    rdf:object wd:Q55432168 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Oriol_Vinyals ;
+    rdfs:comment "Alignment between Oriol_Vinyals and Wikidata entity Q55432168 with confidence 0.95" ;
+    ex:confidence 0.95 .
+
+ex:alignment_Peter_Norvig_Q1969226 a rdf:Statement ;
+    rdf:object wd:Q1969226 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Peter_Norvig ;
+    rdfs:comment "Alignment between Peter_Norvig and Wikidata entity Q1969226 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Pieter_Abbeel_Q48402538 a rdf:Statement ;
+    rdf:object wd:Q48402538 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Pieter_Abbeel ;
+    rdfs:comment "Alignment between Pieter_Abbeel and Wikidata entity Q48402538 with confidence 0.95" ;
+    ex:confidence 0.95 .
+
+ex:alignment_Sam_Altman_Q27543895 a rdf:Statement ;
+    rdf:object wd:Q27543895 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Sam_Altman ;
+    rdfs:comment "Alignment between Sam_Altman and Wikidata entity Q27543895 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Sergey_Levine_Q51601869 a rdf:Statement ;
+    rdf:object wd:Q51601869 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Sergey_Levine ;
+    rdfs:comment "Alignment between Sergey_Levine and Wikidata entity Q51601869 with confidence 0.9" ;
+    ex:confidence 0.9 .
+
+ex:alignment_Stanford_Q41506 a rdf:Statement ;
+    rdf:object wd:Q41506 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Stanford ;
+    rdfs:comment "Alignment between Stanford and Wikidata entity Q41506 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Stuart_Russell_Q92748 a rdf:Statement ;
+    rdf:object wd:Q92748 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Stuart_Russell ;
+    rdfs:comment "Alignment between Stuart_Russell and Wikidata entity Q92748 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Turing_Award_Q185667 a rdf:Statement ;
+    rdf:object wd:Q185667 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Turing_Award ;
+    rdfs:comment "Alignment between Turing_Award and Wikidata entity Q185667 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_UC_Berkeley_Q168719 a rdf:Statement ;
+    rdf:object wd:Q168719 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:UC_Berkeley ;
+    rdfs:comment "Alignment between UC_Berkeley and Wikidata entity Q168719 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Yann_LeCun_Q1330151 a rdf:Statement ;
+    rdf:object wd:Q1330151 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Yann_LeCun ;
+    rdfs:comment "Alignment between Yann_LeCun and Wikidata entity Q1330151 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Yoshua_Bengio_Q55683 a rdf:Statement ;
+    rdf:object wd:Q55683 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Yoshua_Bengio ;
+    rdfs:comment "Alignment between Yoshua_Bengio and Wikidata entity Q55683 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:alignment_Zoubin_Ghahramani_Q92734 a rdf:Statement ;
+    rdf:object wd:Q92734 ;
+    rdf:predicate owl:sameAs ;
+    rdf:subject ex:Zoubin_Ghahramani ;
+    rdfs:comment "Alignment between Zoubin_Ghahramani and Wikidata entity Q92734 with confidence 0.99" ;
+    ex:confidence 0.99 .
+
+ex:authorOf owl:equivalentProperty wdt:P800 ;
+    skos:closeMatch wdt:P800 .
+
+ex:birthDate owl:equivalentProperty wdt:P569 ;
+    skos:closeMatch wdt:P569 .
+
+ex:bornIn owl:equivalentProperty wdt:P19 ;
+    skos:closeMatch wdt:P19 .
+
+ex:citationCount owl:equivalentProperty wdt:P6889 ;
+    skos:closeMatch wdt:P6889 .
+
+ex:collaboratesWith owl:equivalentProperty wdt:P1066 ;
+    skos:closeMatch wdt:P1066 .
+
+ex:hIndex owl:equivalentProperty wdt:P1929 ;
+    skos:closeMatch wdt:P1929 .
+
+ex:homepage owl:equivalentProperty wdt:P856 ;
+    skos:closeMatch wdt:P856 .
+
+ex:locatedIn owl:equivalentProperty wdt:P17 ;
+    skos:closeMatch wdt:P17 .
+
+ex:memberOf owl:equivalentProperty wdt:P463 ;
+    skos:closeMatch wdt:P463 .
+
+ex:name owl:equivalentProperty wdt:P1705 ;
+    skos:closeMatch wdt:P1705 .
+
+ex:studiedAt owl:equivalentProperty wdt:P69 ;
+    skos:closeMatch wdt:P69 .
+
+ex:supervisedBy owl:equivalentProperty wdt:P184 ;
+    skos:closeMatch wdt:P184 .
+
+ex:wonAward owl:equivalentProperty wdt:P166 ;
+    skos:closeMatch wdt:P166 .
+
+ex:worksAt owl:equivalentProperty wdt:P108 ;
+    skos:closeMatch wdt:P108 .
+
+ex:AlexNet owl:sameAs wd:Q15733308 .
+
+ex:Alex_Krizhevsky owl:sameAs wd:Q28485551 .
+
+ex:AlphaGo owl:sameAs wd:Q20983027 .
+
+ex:Andrew_Ng owl:sameAs wd:Q2678895 .
+
+ex:Apple owl:sameAs wd:Q312 .
+
+ex:Attention_is_All_You_Need owl:sameAs wd:Q59670178 .
+
+ex:BERT owl:sameAs wd:Q59667175 .
+
+ex:Bernhard_Scholkopf owl:sameAs wd:Q92739 .
+
+ex:CMU owl:sameAs wd:Q190080 .
+
+ex:Chelsea_Finn owl:sameAs wd:Q61051882 .
+
+ex:David_Silver owl:sameAs wd:Q29049366 .
+
+ex:DeepMind owl:sameAs wd:Q15733006 .
+
+ex:Demis_Hassabis owl:sameAs wd:Q562141 .
+
+ex:Fei-Fei_Li owl:sameAs wd:Q57389 .
+
+ex:Generative_adversarial_network owl:sameAs wd:Q21246376 .
+
+ex:Geoffrey_Hinton owl:sameAs wd:Q92743 .
+
+ex:Google owl:sameAs wd:Q95 .
+
+ex:Greg_Brockman owl:sameAs wd:Q28485580 .
+
+ex:Hugo_Larochelle owl:sameAs wd:Q55683011 .
+
+ex:Ian_Goodfellow owl:sameAs wd:Q28140906 .
+
+ex:Ilya_Sutskever owl:sameAs wd:Q28485575 .
+
+ex:Judea_Pearl owl:sameAs wd:Q92722 .
+
+ex:Jurgen_Schmidhuber owl:sameAs wd:Q92744 .
+
+ex:Kyunghyun_Cho owl:sameAs wd:Q29575183 .
+
+ex:MIT owl:sameAs wd:Q49108 .
+
+ex:MetaAI owl:sameAs wd:Q95075 .
+
+ex:Michael_I_Jordan owl:sameAs wd:Q92745 .
+
+ex:Mila owl:sameAs wd:Q17083398 .
+
+ex:Nando_de_Freitas owl:sameAs wd:Q7404 .
+
+ex:OpenAI owl:sameAs wd:Q21708200 .
+
+ex:Oriol_Vinyals owl:sameAs wd:Q55432168 .
+
+ex:Peter_Norvig owl:sameAs wd:Q1969226 .
+
+ex:Pieter_Abbeel owl:sameAs wd:Q48402538 .
+
+ex:Sam_Altman owl:sameAs wd:Q27543895 .
+
+ex:Sergey_Levine owl:sameAs wd:Q51601869 .
+
+ex:Stanford owl:sameAs wd:Q41506 .
+
+ex:Stuart_Russell owl:sameAs wd:Q92748 .
+
+ex:Turing_Award owl:sameAs wd:Q185667 .
+
+ex:UC_Berkeley owl:sameAs wd:Q168719 .
+
+ex:Yann_LeCun owl:sameAs wd:Q1330151 .
+
+ex:Yoshua_Bengio owl:sameAs wd:Q55683 .
+
+ex:Zoubin_Ghahramani owl:sameAs wd:Q92734 .
+

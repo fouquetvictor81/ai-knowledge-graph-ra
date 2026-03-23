@@ -1,0 +1,165 @@
+@prefix ex: <https://aikg.example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:AIResearchersOntology a owl:Ontology ;
+    rdfs:label "AI Researchers Knowledge Graph Ontology" ;
+    rdfs:comment "Ontology for representing scientific researchers in Artificial Intelligence, their affiliations, awards, publications and collaborations." .
+
+ex:Company a owl:Class ;
+    rdfs:label "Company" ;
+    rdfs:comment "A commercial company involved in AI research." ;
+    rdfs:subClassOf ex:Organization .
+
+ex:Dataset a owl:Class ;
+    rdfs:label "Dataset" ;
+    rdfs:comment "A collection of data used for training or evaluation." .
+
+ex:ResearchLab a owl:Class ;
+    rdfs:label "ResearchLab" ;
+    rdfs:comment "A research laboratory or institute." ;
+    rdfs:subClassOf ex:Organization .
+
+ex:affiliatedWith a owl:ObjectProperty ;
+    rdfs:label "affiliatedWith" ;
+    rdfs:comment "An organization with which a researcher is affiliated." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:Organization .
+
+ex:alias a owl:DatatypeProperty ;
+    rdfs:label "alias" ;
+    rdfs:comment "Alternative name or abbreviation." ;
+    rdfs:range xsd:string .
+
+ex:authorOf a owl:ObjectProperty ;
+    rdfs:label "authorOf" ;
+    rdfs:comment "A publication authored by a researcher." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:Publication .
+
+ex:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birthDate" ;
+    rdfs:comment "Date of birth." ;
+    rdfs:range xsd:date .
+
+ex:bornIn a owl:ObjectProperty ;
+    rdfs:label "bornIn" ;
+    rdfs:comment "The country or city where a researcher was born." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:Country .
+
+ex:citationCount a owl:DatatypeProperty ;
+    rdfs:label "citationCount" ;
+    rdfs:comment "Total number of citations." ;
+    rdfs:range xsd:integer .
+
+ex:collaboratesWith a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "collaboratesWith" ;
+    rdfs:comment "A researcher who collaborates with another researcher." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:Researcher .
+
+ex:email a owl:DatatypeProperty ;
+    rdfs:label "email" ;
+    rdfs:comment "Email address." ;
+    rdfs:range xsd:string .
+
+ex:fieldOfStudy a owl:ObjectProperty ;
+    rdfs:label "fieldOfStudy" ;
+    rdfs:comment "A research field the researcher works in." ;
+    rdfs:domain ex:Researcher .
+
+ex:hIndex a owl:DatatypeProperty ;
+    rdfs:label "hIndex" ;
+    rdfs:comment "h-index bibliometric indicator." ;
+    rdfs:range xsd:integer .
+
+ex:homepage a owl:DatatypeProperty ;
+    rdfs:label "homepage" ;
+    rdfs:comment "Personal or organizational homepage URL." ;
+    rdfs:range xsd:anyURI .
+
+ex:locatedIn a owl:ObjectProperty ;
+    rdfs:label "locatedIn" ;
+    rdfs:comment "The country or city where an organization is located." ;
+    rdfs:domain ex:Organization ;
+    rdfs:range ex:Country .
+
+ex:memberOf a owl:ObjectProperty ;
+    rdfs:label "memberOf" ;
+    rdfs:comment "A group or organization a researcher is a member of." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:Organization .
+
+ex:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:comment "Full name of the researcher or organization." ;
+    rdfs:range xsd:string .
+
+ex:nationality a owl:DatatypeProperty ;
+    rdfs:label "nationality" ;
+    rdfs:comment "Nationality of the researcher." ;
+    rdfs:range xsd:string .
+
+ex:publishedAt a owl:ObjectProperty ;
+    rdfs:label "publishedAt" ;
+    rdfs:comment "The conference or venue where a work was published." ;
+    rdfs:domain ex:Publication ;
+    rdfs:range ex:Conference .
+
+ex:studiedAt a owl:ObjectProperty ;
+    rdfs:label "studiedAt" ;
+    rdfs:comment "An educational institution where a researcher studied." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:University .
+
+ex:supervisedBy a owl:ObjectProperty ;
+    rdfs:label "supervisedBy" ;
+    rdfs:comment "The academic supervisor of a researcher." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:Researcher ;
+    owl:inverseOf ex:supervised .
+
+ex:wonAward a owl:ObjectProperty ;
+    rdfs:label "wonAward" ;
+    rdfs:comment "An award received by a researcher." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:Award .
+
+ex:worksAt a owl:ObjectProperty ;
+    rdfs:label "worksAt" ;
+    rdfs:comment "The organization where a researcher is currently employed." ;
+    rdfs:domain ex:Researcher ;
+    rdfs:range ex:Organization .
+
+ex:Award a owl:Class ;
+    rdfs:label "Award" ;
+    rdfs:comment "A prize or honor given for achievements." .
+
+ex:Conference a owl:Class ;
+    rdfs:label "Conference" ;
+    rdfs:comment "An academic conference or symposium." .
+
+ex:University a owl:Class ;
+    rdfs:label "University" ;
+    rdfs:comment "An academic institution offering higher education." ;
+    rdfs:subClassOf ex:Organization .
+
+ex:Country a owl:Class ;
+    rdfs:label "Country" ;
+    rdfs:comment "A nation or sovereign state." .
+
+ex:Publication a owl:Class ;
+    rdfs:label "Publication" ;
+    rdfs:comment "A scientific paper, book or technical report." .
+
+ex:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "An institution, company or research group." .
+
+ex:Researcher a owl:Class ;
+    rdfs:label "Researcher" ;
+    rdfs:comment "A person who conducts scientific research in Artificial Intelligence." .
+

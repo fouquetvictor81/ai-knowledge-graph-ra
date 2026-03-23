@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data folders (large files)
+data/crawled_pages.jsonl
+data/train.txt
+data/valid.txt
+data/test.txt
+data/entity2id.txt
+data/relation2id.txt
+
+# Generated KG artifacts (can be regenerated)
+kg_artifacts/initial_kg.nt
+kg_artifacts/expanded_kg.nt
+
+# Models (large binary files)
+models/
+!models/.gitkeep
+
+# Results
+results/*.png
+results/*.jpg
+results/*.pdf
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# spaCy models (downloaded separately)
+en_core_web_*/
+en_core_web_trf/

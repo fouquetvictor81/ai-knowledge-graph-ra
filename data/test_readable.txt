@@ -1,0 +1,15 @@
+alignment_AlexNet_Q15733308	predicate	sameAs
+CMU	memberOf	Q118398
+Stanford	memberOf	Q2842325
+Q95	locatedIn	Q30
+Andrew_Ng	worksAt	Stanford
+alignment_Sergey_Levine_Q51601869	predicate	sameAs
+alignment_Sam_Altman_Q27543895	predicate	sameAs
+alignment_Pieter_Abbeel_Q48402538	predicate	sameAs
+MIT	memberOf	Q5137944
+alignment_MetaAI_Q95075	predicate	sameAs
+Stanford	memberOf	Q123938901
+alignment_Peter_Norvig_Q1969226	predicate	sameAs
+alignment_Demis_Hassabis_Q562141	predicate	sameAs
+Stanford	memberOf	Q19861084
+alignment_DeepMind_Q15733006	predicate	sameAs
