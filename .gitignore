@@ -83,3 +83,16 @@ dmypy.json
 # spaCy models (downloaded separately)
 en_core_web_*/
 en_core_web_trf/
+
+# Node
+node_modules/
+package-lock.json
+package.json
+
+# Rapport et scripts de generation
+generate_report.js
+Rapport_KG_RAG_Fouquet.docx
+~$*.docx
+
+# Screenshots locales
+screenshot_*.png
